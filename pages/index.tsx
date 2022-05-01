@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import backgroundImg from "../public/pokemon-grass-background.jpeg";
+import pokemonLogoImg from "../public/hero.png";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -13,8 +13,15 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className={styles.main}></main>
-
+			<main className={styles.main}>
+				<div className={styles.logoContainer}>
+					<Image
+						src={pokemonLogoImg}
+						className={styles.logo}
+						alt="Pokemon Logo"
+					/>
+				</div>
+			</main>
 			<footer className={styles.footer}></footer>
 		</div>
 	);
