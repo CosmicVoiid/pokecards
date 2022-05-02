@@ -1,0 +1,33 @@
+.searchbarContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    width: 13rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+  }
+  
+  .searchbarInput {
+    border-radius: var(--border-radius);
+    border: none;
+    width: 11rem;
+    padding: .3rem .8rem;
+  }
+  
+  .searchbarInput:focus {
+    outline: none;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    margin-right: .1rem;
+  }
+  
+  .icon:hover {
+    cursor: pointer;
+  }
