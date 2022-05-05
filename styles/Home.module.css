@@ -13,3 +13,11 @@
   justify-content: center;
   margin-top: 1.5rem;
 }
+
+.randomLink {
+  font-family: var(--ft-odibee);
+  display: flex;
+  justify-content: center;
+  margin-top: .5rem;
+  font-size: var(--fs-l)
+}

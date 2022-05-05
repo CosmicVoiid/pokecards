@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
 html,
 body {
   padding: 0;
@@ -17,4 +19,13 @@ a {
 
 :root {
   --border-radius: 15px;
+  --ft-odibee: 'Odibee Sans', helvetica, arial, sans-serif;
+
+  --fs-xs: .75rem;
+  --fs-s: .875rem;
+  --fs-m: 1rem;
+  --fs-ml: 1.125rem;
+  --fs-l: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2rem;
 }
