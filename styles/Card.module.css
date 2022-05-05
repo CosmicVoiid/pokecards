@@ -37,19 +37,86 @@
 }
 
 .cardElement {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     border-radius: 50%;
     background-color: white;
     margin-left: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardElementBug {
+    background-color: #1c4b26;
+}
+
+.cardElementDark {
+    background-color: #040705;
+}
+
+.cardElementDragon {
+    background-color: #448b95;
+}
+
+.cardElementElectric {
+    background-color: #e3e32b;
+}
+
+.cardElementFairy {
+    background-color: #971944;
+}
+
+.cardElementFighting {
+    background-color: #994025;
 }
 
 .cardElementFire {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: red;
-    margin-left: .5rem;
+    background-color: #ab1f23;
+}
+
+.cardElementFlying {
+    background-color: #4a677d;
+}
+
+.cardElementGhost {
+    background-color: #33336b;
+}
+
+.cardElementGrass {
+    background-color: #147b3d;
+}
+
+.cardElementGround {
+    background-color: #a8702c;
+}
+
+.cardElementIce {
+    background-color: #86d2f5;
+}
+
+.cardElementNormal {
+    background-color: #75515b;
+}
+
+.cardElementPoison {
+    background-color: #5e2d88;
+}
+
+.cardElementPsychic {
+    background-color: #a4296c;
+}
+
+.cardElementRock {
+    background-color: #48180b;
+}
+
+.cardElementSteel {
+    background-color: #5e746d;
+}
+
+.cardElementWater {
+    background-color: #1552e2;
 }
 
 .cardFrame1 {
