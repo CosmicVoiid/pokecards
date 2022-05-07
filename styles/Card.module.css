@@ -11,17 +11,18 @@
 .cardLayer2 {
     width: 90%;
     height: 93%;
-    background-color: #aa53ab;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 4px;
+    /* background-color: rgb(255, 112, 112); */
 }
 
 .cardHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
+    height: 35px;
     /* background-color: green; */
     width: 88%;
 }
@@ -34,6 +35,7 @@
 
 .cardElementContainer {
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .cardElement {
