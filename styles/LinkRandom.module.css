@@ -1,0 +1,22 @@
+.randomLink {
+    font-family: var(--ft-odibee);
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    font-size: var(--fs-l);
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: var(--ft-odibee);
+    font-size: var(--fs-l);
+    color: rgb(233, 27, 0);
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }

@@ -29,7 +29,7 @@
 }
 
 .cardBack {
-    border-radius: var(--border-radius)
+    border-radius: var(--border-radius);
 }
 
 .cardBackImg {

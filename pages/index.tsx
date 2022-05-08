@@ -1,3 +1,4 @@
+import LinkRandom from "./../components/LinkRandom";
 import Searchbar from "../components/Searchbar";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
 			</div>
 
 			<Searchbar />
-			<span className={styles.randomLink}>or choose a random Pokemon</span>
+			<LinkRandom />
 		</main>
 	);
 };
