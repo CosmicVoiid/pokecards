@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 13rem;
     background-color: white;
     border-radius: var(--border-radius);
@@ -26,6 +26,9 @@
     justify-content: center;
     width: 2rem;
     margin-right: .1rem;
+    border: none;
+    background-color: inherit;
+    border-radius: 15px;
   }
   
   .icon:hover {
