@@ -1,0 +1,30 @@
+.main {
+    background: url("/pokemon-grass-background.jpeg") no-repeat fixed;
+    background-size: cover;
+    background-position-x: 70%;
+    background-position-y: center;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+   
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+  
+.randomLink {
+    font-family: var(--ft-odibee);
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    font-size: var(--fs-l)
+}
+
+.header {
+    font-size: var(--fs-xl);
+    text-align: center;
+    margin-top: 2rem;
+    font-family: var(--ft-odibee)
+}

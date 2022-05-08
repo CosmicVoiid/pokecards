@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
-import styles from "../styles/Custom400.module.css";
+import styles from "../styles/Custom500.module.css";
 import Image from "next/image";
 import pokemonLogoImg from "../public/hero.png";
 import Searchbar from "../components/Searchbar";
 import LinkRandom from "../components/LinkRandom";
 
-const Custom400: NextPage = () => {
+const Custom500: NextPage = () => {
 	return (
 		<main className={styles.main}>
 			<div className={styles.logoContainer}>
@@ -23,4 +23,4 @@ const Custom400: NextPage = () => {
 	);
 };
 
-export default Custom400;
+export default Custom500;
