@@ -29,7 +29,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 	const data = await res.json();
 
 	return {
-		props: { pokemon: data },
+		props: { pokemon: data, key: data.name },
 	};
 };
 

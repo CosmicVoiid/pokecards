@@ -1,4 +1,5 @@
 // import "../styles/global.css";
+import { useState, useEffect } from "react";
 import styles from "../styles/Card.module.css";
 import Image from "next/image";
 
@@ -43,53 +44,77 @@ const Card = ({
 	height,
 	weight,
 }: Props) => {
+	const [flipClass, setFlipClass] = useState(styles[""]);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setFlipClass(styles["sceneFlip"]);
+		}, 1000);
+	}, []);
+
 	return (
-		<div className={styles.cardLayer1}>
-			<div
-				className={`${parseStyles(
-					capitalizeFirstLetter(elements[0].type.name)
-				)} ${styles.cardLayer2}`}
-				style={{
-					backgroundColor: `var(--color-${elements[0].type.name}-light)`,
-				}}
-			>
-				<div className={styles.cardHeader}>
-					<span className={styles.cardName}>{capitalizeFirstLetter(name)}</span>
-					<div className={styles.cardElementContainer}>
-						{elements.map((element, index) => {
-							return (
-								<div
-									key={index}
-									className={`${styles.cardElement} ${parseStyles(
-										capitalizeFirstLetter(element.type.name)
-									)}`}
-								>
-									<Image
-										className={styles.svg}
-										src={`/svg/${element.type.name}.svg`}
-										alt={`${element.type.name} type`}
-										height={17}
-										width={17}
-									/>
-								</div>
-							);
-						})}
+		<div className={`${styles.scene} ${flipClass}`}>
+			<div className={`${styles.fullCard} ${flipClass}`}>
+				<div
+					className={`${styles.cardLayer1} ${styles.cardFace} ${styles.cardFront}`}
+				>
+					<div
+						className={`${parseStyles(
+							capitalizeFirstLetter(elements[0].type.name)
+						)} ${styles.cardLayer2}`}
+						style={{
+							backgroundColor: `var(--color-${elements[0].type.name}-light)`,
+						}}
+					>
+						<div className={styles.cardHeader}>
+							<span className={styles.cardName}>
+								{capitalizeFirstLetter(name)}
+							</span>
+							<div className={styles.cardElementContainer}>
+								{elements.map((element, index) => {
+									return (
+										<div
+											key={index}
+											className={`${styles.cardElement} ${parseStyles(
+												capitalizeFirstLetter(element.type.name)
+											)}`}
+										>
+											<Image
+												className={styles.svg}
+												src={`/svg/${element.type.name}.svg`}
+												alt={`${element.type.name} type`}
+												height={17}
+												width={17}
+											/>
+										</div>
+									);
+								})}
+							</div>
+						</div>
+						<div className={styles.cardFrame1}>
+							<div className={styles.cardFrame2}>
+								<Image src={img} alt={name} layout="fill" objectFit="contain" />
+							</div>
+						</div>
+						<div className={styles.infoContainer}>
+							<div className={styles.info}>{hp} HP</div>
+							<div className={styles.info}>{attack} Atk</div>
+							<div className={styles.info}>{defense} Def</div>
+							<div className={styles.info}>{special_attack} Sp. Atk</div>
+							<div className={styles.info}>{special_defense} Sp. Def</div>
+							<div className={styles.info}>{speed} Spd</div>
+							<div className={styles.info}>{height} Meters</div>
+							<div className={styles.info}>{weight} Kg</div>
+						</div>
 					</div>
 				</div>
-				<div className={styles.cardFrame1}>
-					<div className={styles.cardFrame2}>
-						<Image src={img} alt={name} layout="fill" objectFit="contain" />
-					</div>
-				</div>
-				<div className={styles.infoContainer}>
-					<div className={styles.info}>{hp} HP</div>
-					<div className={styles.info}>{attack} Atk</div>
-					<div className={styles.info}>{defense} Def</div>
-					<div className={styles.info}>{special_attack} Sp. Atk</div>
-					<div className={styles.info}>{special_defense} Sp. Def</div>
-					<div className={styles.info}>{speed} Spd</div>
-					<div className={styles.info}>{height} Meters</div>
-					<div className={styles.info}>{weight} Kg</div>
+				<div className={`${styles.cardFace} ${styles.cardBack}`}>
+					<Image
+						className={styles.cardBackImg}
+						src="/pokemon-back.png"
+						alt="card face back"
+						layout="fill"
+					/>
 				</div>
 			</div>
 		</div>

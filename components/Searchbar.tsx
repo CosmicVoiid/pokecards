@@ -15,7 +15,8 @@ const Searchbar = () => {
 	const handleSubmit = (e: FormEvent<EventTarget>): void => {
 		e.preventDefault();
 
-		router.push("/pokecard/" + pokemon);
+		router.push("/pokecard/" + pokemon.toLowerCase());
+		setPokemon("");
 	};
 
 	return (
