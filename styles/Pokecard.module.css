@@ -4,7 +4,7 @@
     background-position-x: 70%;
     background-position-y: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     position: absolute;
    }
    
@@ -24,4 +24,8 @@
     .cardContainer {
         margin-top: 2.5rem;
     }
+}
+
+@media (min-width: 992px){
+    
 }
