@@ -28,6 +28,44 @@ a {
   --fs-l: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-xxl: 2rem;
+
+  --color-bug: hsl(133, 46%, 20%);
+  --color-dark: hsl(140, 27%, 2%);
+  --color-dragon: hsl(187, 37%, 43%);
+  --color-electric: hsl(60, 77%, 53%);
+  --color-fairy: hsl(340, 72%, 35%);
+  --color-fighting: hsl(14, 61%, 37%);
+  --color-fire: hsl(358, 69%, 40%);
+  --color-flying: hsl(206, 26%, 39%);
+  --color-ghost: hsl(240, 35%, 31%);
+  --color-grass: hsl(144, 72%, 28%);
+  --color-ground: hsl(33, 58%, 42%);
+  --color-ice: hsl(199, 85%, 74%);
+  --color-normal: hsl(343, 18%, 39%);
+  --color-poison: hsl(272, 50%, 35%);
+  --color-psychic: hsl(327, 60%, 40%);
+  --color-rock: hsl(13, 73%, 16%);
+  --color-steel: hsl(161, 10%, 41%);
+  --color-water: hsl(222, 83%, 48%);
+
+  --color-bug-light: hsl(133, 46%, 50%);
+  --color-dark-light: hsl(140, 27%, 42%);
+  --color-dragon-light: hsl(187, 37%, 63%);
+  --color-electric-light: hsl(60, 77%, 83%);
+  --color-fairy-light: hsl(340, 72%, 55%);
+  --color-fighting-light: hsl(14, 61%, 57%);
+  --color-fire-light: hsl(358, 69%, 60%);
+  --color-flying-light: hsl(206, 26%, 59%);
+  --color-ghost-light: hsl(240, 35%, 51%);
+  --color-grass-light: hsl(144, 72%, 48%);
+  --color-ground-light: hsl(33, 58%, 62%);
+  --color-ice-light: hsl(199, 85%, 94%);
+  --color-normal-light: hsl(343, 18%, 59%);
+  --color-poison-light: hsl(272, 50%, 55%);
+  --color-psychic-light: hsl(327, 60%, 60%);
+  --color-rock-light: hsl(13, 73%, 46%);
+  --color-steel-light: hsl(161, 10%, 61%);
+  --color-water-light: hsl(222, 83%, 68%);
 }
 
 

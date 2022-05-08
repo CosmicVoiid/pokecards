@@ -39,8 +39,8 @@
 }
 
 .cardElement {
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: white;
     margin-left: .5rem;
@@ -50,75 +50,75 @@
 }
 
 .cardElementBug {
-    background-color: #1c4b26;
+    background-color: var(--color-bug);
 }
 
 .cardElementDark {
-    background-color: #040705;
+    background-color: var(--color-dark);
 }
 
 .cardElementDragon {
-    background-color: #448b95;
+    background-color: var(--color-dragon);
 }
 
 .cardElementElectric {
-    background-color: #e3e32b;
+    background-color: var(--color-electric);
 }
 
 .cardElementFairy {
-    background-color: #971944;
+    background-color: var(--color-fairy);
 }
 
 .cardElementFighting {
-    background-color: #994025;
+    background-color: var(--color-fighting);
 }
 
 .cardElementFire {
-    background-color: #ab1f23;
+    background-color: var(--color-fire);
 }
 
 .cardElementFlying {
-    background-color: #4a677d;
+    background-color: var(--color-flying);
 }
 
 .cardElementGhost {
-    background-color: #33336b;
+    background-color: var(--color-ghost);
 }
 
 .cardElementGrass {
-    background-color: #147b3d;
+    background-color: var(--color-grass);
 }
 
 .cardElementGround {
-    background-color: #a8702c;
+    background-color: var(--color-ground);
 }
 
 .cardElementIce {
-    background-color: #86d2f5;
+    background-color: var(--color-ice);
 }
 
 .cardElementNormal {
-    background-color: #75515b;
+    background-color: var(--color-normal);
 }
 
 .cardElementPoison {
-    background-color: #5e2d88;
+    background-color: var(--color-poison);
 }
 
 .cardElementPsychic {
-    background-color: #a4296c;
+    background-color: var(--color-psychic);
 }
 
 .cardElementRock {
-    background-color: #48180b;
+    background-color: var(--color-rock);
 }
 
 .cardElementSteel {
-    background-color: #5e746d;
+    background-color: var(--color-steel);
 }
 
 .cardElementWater {
-    background-color: #1552e2;
+    background-color: var(--color-steel);
 }
 
 .cardFrame1 {
@@ -138,4 +138,17 @@
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.infoContainer {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.info {
+    font-family: var(--ft-odibee);
+    font-size: var(--fs-xl)
 }

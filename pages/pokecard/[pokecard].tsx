@@ -47,6 +47,14 @@ const pokecard: NextPage = ({ pokemon }: any) => {
 					name={pokemon.name}
 					img={pokemon.sprites.other["official-artwork"].front_default}
 					elements={pokemon.types}
+					hp={pokemon.stats[0].base_stat}
+					attack={pokemon.stats[1].base_stat}
+					defense={pokemon.stats[2].base_stat}
+					special_attack={pokemon.stats[3].base_stat}
+					special_defense={pokemon.stats[4].base_stat}
+					speed={pokemon.stats[5].base_stat}
+					height={pokemon.height}
+					weight={pokemon.weight}
 				/>
 			</div>
 			<div>{pokemon.weight}</div>
