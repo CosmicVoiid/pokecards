@@ -1,4 +1,9 @@
-import type { NextPage, GetStaticPaths, GetStaticProps } from "next";
+import type {
+	NextPage,
+	GetStaticPaths,
+	GetStaticProps,
+	GetServerSideProps,
+} from "next";
 import Image from "next/image";
 import Card from "../../components/Card";
 import pokemonLogoImg from "../../public/hero.png";
@@ -6,23 +11,7 @@ import styles from "../../styles/Pokecard.module.css";
 import Searchbar from "../../components/Searchbar";
 import LinkRandom from "../../components/LinkRandom";
 
-export const getStaticPaths: GetStaticPaths = async () => {
-	const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1126");
-	const data = await res.json();
-
-	const paths = data.results.map((pokemon: { name: string }) => {
-		return {
-			params: { pokecard: pokemon.name },
-		};
-	});
-
-	return {
-		paths,
-		fallback: false,
-	};
-};
-
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
 	const pokemon = context.params!.pokecard;
 	const res = await fetch(
 		"https://pokeapi.co/api/v2/pokemon/" + pokemon!.toString()
