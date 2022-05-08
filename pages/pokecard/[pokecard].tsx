@@ -13,14 +13,20 @@ import LinkRandom from "../../components/LinkRandom";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
 	const pokemon = context.params!.pokecard;
-	const res = await fetch(
-		"https://pokeapi.co/api/v2/pokemon/" + pokemon!.toString()
-	);
-	const data = await res.json();
+	try {
+		const res = await fetch(
+			"https://pokeapi.co/api/v2/pokemon/" + pokemon!.toString()
+		);
+		const data = await res.json();
 
-	return {
-		props: { pokemon: data, key: data.name },
-	};
+		return {
+			props: { pokemon: data, key: data.name },
+		};
+	} catch {
+		return {
+			notFound: true,
+		};
+	}
 };
 
 const pokecard: NextPage = ({ pokemon }: any) => {
