@@ -4,6 +4,7 @@ import Card from "../../components/Card";
 import pokemonLogoImg from "../../public/hero.png";
 import styles from "../../styles/Pokecard.module.css";
 import Searchbar from "../../components/Searchbar";
+import LinkRandom from "../../components/LinkRandom";
 
 export const getStaticPaths: GetStaticPaths = async () => {
 	const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1126");
@@ -44,6 +45,7 @@ const pokecard: NextPage = ({ pokemon }: any) => {
 				/>
 			</div>
 			<Searchbar />
+			<LinkRandom />
 			<div className={styles.cardContainer}>
 				<Card
 					name={pokemon.name}

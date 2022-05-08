@@ -5,7 +5,7 @@ const LinkRandom = () => {
 	const router = useRouter();
 
 	const handleRandom = async () => {
-		const randomIndex = Math.floor(Math.random() * 1126);
+		const randomIndex = Math.floor(Math.random() * 899);
 		const res = await fetch(
 			"https://pokeapi.co/api/v2/pokemon/" + randomIndex.toString()
 		);

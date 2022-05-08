@@ -11,11 +11,17 @@
 .logoContainer {
      display: flex;
      justify-content: center;
-     margin-top: 1.5rem;
+     margin-top: 1rem;
 }
 
 .cardContainer {
-    margin-top: 1rem;
+    margin-top: .5rem;
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 688px){
+    .cardContainer {
+        margin-top: 2.5rem;
+    }
 }

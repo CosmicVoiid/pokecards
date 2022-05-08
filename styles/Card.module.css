@@ -186,9 +186,24 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    row-gap: .5rem;
 }
 
 .info {
     font-family: var(--ft-odibee);
     font-size: var(--fs-xl)
+}
+
+@media (min-width: 688px){
+    .scene {
+        width: 300px;
+        height: 425px;
+    }
+}
+
+@media (min-width: 992px){
+    .scene {
+        width: 350px;
+        height: 475px;
+    }
 }

@@ -7,20 +7,22 @@
     width: 13rem;
     background-color: white;
     border-radius: var(--border-radius);
-  }
+}
   
-  .searchbarInput {
+.searchbarInput {
     border-radius: var(--border-radius);
     border: none;
     width: 11rem;
     padding: .3rem .8rem;
-  }
+    font-size: var(--fs-ml);
+    font-family: var(--ft-odibee);
+}
   
-  .searchbarInput:focus {
+.searchbarInput:focus {
     outline: none;
-  }
+}
   
-  .icon {
+.icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +31,27 @@
     border: none;
     background-color: inherit;
     border-radius: 15px;
-  }
+}
   
-  .icon:hover {
+.icon:hover {
     cursor: pointer;
-  }
+}
+
+@media (min-width: 688px){
+    .searchbarContainer {
+        margin-top: 2rem;
+        width: 18rem;
+    }
+
+    .searchbarInput {
+        width: 16rem;
+    }
+}
+
+@media (min-width: 992px){
+    .searchbarInput {
+        height: 2rem;
+        font-size: var(--fs-l);
+        font-family: var(--ft-odibee);
+    }
+}

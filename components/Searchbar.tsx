@@ -15,6 +15,8 @@ const Searchbar = () => {
 	const handleSubmit = (e: FormEvent<EventTarget>): void => {
 		e.preventDefault();
 
+		if (pokemon.length === 0) return;
+
 		router.push("/pokecard/" + pokemon.toLowerCase());
 		setPokemon("");
 	};
@@ -27,6 +29,7 @@ const Searchbar = () => {
 				placeholder="Search"
 				value={pokemon}
 				onChange={(e) => handleChange(e)}
+				required={true}
 			/>
 
 			<button className={styles.icon} type="submit">
