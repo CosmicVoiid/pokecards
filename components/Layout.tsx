@@ -17,7 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>{children}</main>
+			{children}
 		</div>
 	);
 };

@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  min-height: 100vh;
 }
 
 a {
@@ -33,7 +32,7 @@ a {
   --color-bug: hsl(133, 46%, 20%);
   --color-dark: hsl(140, 27%, 2%);
   --color-dragon: hsl(187, 37%, 43%);
-  --color-electric: hsl(60, 77%, 53%);
+  --color-electric: hsl(61, 100%, 40%);
   --color-fairy: hsl(340, 72%, 35%);
   --color-fighting: hsl(14, 61%, 37%);
   --color-fire: hsl(358, 69%, 40%);
