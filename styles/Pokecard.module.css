@@ -4,14 +4,13 @@
     background-position-x: 70%;
     background-position-y: center;
     width: 100%;
-    min-height: 100%;
-    position: absolute;
+    min-height: 100vh;
    }
    
 .logoContainer {
      display: flex;
      justify-content: center;
-     margin-top: 1rem;
+     padding-top: 1rem;
 }
 
 .cardContainer {
