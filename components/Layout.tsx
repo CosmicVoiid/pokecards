@@ -13,6 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
 			<Head>
 				<title>PokeCards</title>
 				<meta name="PokeCards" content="Pokemon card generator" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
